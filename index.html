@@ -380,7 +380,7 @@
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
+          <form id="contact" action="mailto:hello@clubship.live" method="post" enctype="text/plain">
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
@@ -416,6 +416,14 @@
       </div>
     </div>
   </div>
+  
+  <div id="thanks" style="display:none;">Thanks for contacting us! Our team will get back to you in next 24 hours.</div>
+  
+  <script>
+    document.querySelector('form').addEventListener('submit', function() {
+      document.querySelector('#thanks').style.display = 'block';
+    });
+  </script>
 
   <footer>
     <div class="container">
